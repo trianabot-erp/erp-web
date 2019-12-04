@@ -1,0 +1,86 @@
+.marketing{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.product{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.order{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.sales{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.purchase{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.finance{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;   
+    cursor: pointer;
+}
+.crm{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px; 
+    cursor: pointer;
+}
+
+.employees{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.expenses{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.plant{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.schemas{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.setting{
+    height: 91px;
+    width: 58px;
+    padding-top: 36px;
+    cursor: pointer;
+}
+.boxed {
+    padding: 32px;
+    background: #f8f8f8;
+}
+.ab{
+    margin-top: 10px;
+    padding-top: 4px;
+    width: 41px;
+    height: 22px;
+    border-radius: 24px;
+    margin-left: 5px;
+    font-size: 12px;
+}

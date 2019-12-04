@@ -1,0 +1,15 @@
+.table-scroll {
+    position:relative;
+    margin:auto;
+    overflow:hidden;
+    border: 1px solid rgb(216, 210, 210);
+    margin-top: -27px;
+    }
+    .table-wrap {
+    
+    overflow:auto;
+    height:500px
+    }
+    .table{
+    overflow: scroll;
+    }

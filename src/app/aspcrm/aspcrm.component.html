@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="row" style="margin-top:20px;">
+        <div class="col-sm-3">
+            <app-sidenavone></app-sidenavone>
+        </div>
+
+        <div class="col-sm-9">
+                <h4>ASP </h4> <hr>
+                <p style="font-size: 11px;">CRM > <b> Details</b></p>
+                <div class="card" style="width: 91rem;
+                height: 100vh;font-size: 14px;">
+                <div class="card-header products">
+                        ASP Lists
+               
+                
+                </div>
+                <div class="card-body ">
+                
+                <div class="topnav" style="float: right;">
+                
+              
+                </div>
+                <br>
+                <br>
+                <div id="table-scroll" class="table-scroll" >
+                <div class="table-wrap">
+                <table class="table">
+                <thead>
+                <tr>
+                <th>S No</th>
+                <th>ASPName</th>
+                <th>ContactPerson</th>
+                <th> PinCode</th>
+                <th>ContactNumber</th>
+                <th>Email</th>
+                <th>Area</th>
+                <th>Action</th>
+                
+                
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table" *ngFor="let hero of heroes">
+                <td>{{hero.SNo}}</td>
+                <td>{{hero.ASPName}}</td>
+                <td>{{hero.ContactPerson}}</td>
+                <td>{{hero.PinCode}}</td>
+                <td>{{hero.ContactNumber}}</td>
+                <td>{{hero.Email}}</td>
+                <td>{{hero.Area}}</td>
+                <td>{{hero.Action}}</td>
+                
+                
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                </div>
+                
+                </div>
+                
+                </div>
+        </div>
+    </div>

@@ -1,0 +1,65 @@
+<div class="container-fluid">
+    <div class="row" style="margin-top:20px;">
+        <div class="col-sm-3">
+            <app-sidenavone></app-sidenavone>
+        </div>
+
+        <div class="col-sm-9">
+                <h4>ASP Technician</h4> <hr>
+                <p style="font-size: 11px;">CRM > <b> ASP Technician</b></p>
+                <div class="card" style="width: 91rem;
+                height: 100vh;font-size: 14px;">
+                <div class="card-header products">
+                        Technician Lists
+               
+                
+                </div>
+                <div class="card-body ">
+                
+                <div class="topnav" style="float: right;">
+                
+                <div class="search-hero">
+                
+                <input type="text" placeholder="Search.." name="search" [(ngModel)]="searchText" autocomplete="on" >
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                </div>
+                <br>
+                <br>
+                <div id="table-scroll" class="table-scroll">
+                <div class="table-wrap">
+                <table class="table">
+                <thead>
+                <tr>
+                <th>S No</th>
+                <th>TechnicianName</th>
+                <th>ASP</th>
+                <th>Contact</th>
+                <th>Area</th>
+               
+                
+                
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table" *ngFor="let hero of heroes | filter:searchText">
+                <td>{{hero.SNo}}</td>
+                <td>{{hero.TechnicianName}}</td>
+                <td>{{hero.ASP}}</td>
+                <td>{{hero.Contact}}</td>
+                <td>{{hero.Area}}</td>
+                
+                
+                
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                </div>
+                
+                </div>
+                
+                </div>
+        </div>
+    </div>
+</div>

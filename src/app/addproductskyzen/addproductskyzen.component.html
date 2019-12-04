@@ -1,0 +1,107 @@
+<div class="container-fluid">
+        <div class="row" style="margin-top:20px;">
+                <div class="col-sm-3">
+            <app-sidenav></app-sidenav>
+                </div>
+                
+                    <div class="col-sm-9" style="margin-top:27px;font-size: 25px;">
+                       
+                        Add Products
+                        <hr>
+                        <p style="font-size: 12px;">Setting > <b>Add Product Master</b></p>
+                        <div class="card" style="width: 73rem;font-size: 19px;">
+                        <div class="card-header products">
+                        Add Products
+                        <button style="float:right;border-radius: 24px;font-size: 14px;margin-top:2px;" type="button" (click)="viewproduct()" class="btn btn-dark">View Products</button>
+                        </div>
+                        <div class="card-body">
+                        
+                         <form [formGroup]="productform" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                        <label style="font-size: 16px;">Brand Name <span style="color: red;">*</span></label>
+                        <input type="text" formControlName="brandname" class="form-control" placeholder="Brand Name" />
+                        <div *ngIf="productform.controls['brandname'].invalid && (productform.controls['brandname'].dirty || productform.controls['brandname'].touched)" class="alert alert-danger">
+                                <div *ngIf="productform.controls['brandname'].errors.required" style="font-size: 8px;">
+                                BrandName is required.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <label style="font-size: 16px;">Product Name <span style="color: red;">*</span></label>
+                        <input type="text" formControlName="productname" class="form-control" placeholder="Product Name " />
+                        <div *ngIf="productform.controls['productname'].invalid && (productform.controls['productname'].dirty || productform.controls['productname'].touched)" class="alert alert-danger">
+                                <div *ngIf="productform.controls['productname'].errors.required" style="font-size: 8px;">
+                                Product Name is required.
+                              </div>
+                            </div>
+                    </div>
+                        </div>
+                        <div class="col-md-6">
+                        
+                        <div class="form-group">
+                        <label style="font-size: 16px;">Category Name <span style="color: red;">*</span></label>
+                        <input type="text" formControlName="categoryname" class="form-control" placeholder="Category Name" />
+                        <div *ngIf="productform.controls['categoryname'].invalid && (productform.controls['categoryname'].dirty || productform.controls['categoryname'].touched)" class="alert alert-danger">
+                                <div *ngIf="productform.controls['categoryname'].errors.required" style="font-size: 8px;">
+                                        Category Name is required.
+                              </div>
+                            </div>
+                    </div>
+                        <div class="form-group">
+                        <label style="font-size: 16px;">Part Description<span style="color: red;">*</span></label>
+                        <input type="text" formControlName="partdescription" class="form-control" placeholder="Part Description"  />
+                        <div *ngIf="productform.controls['partdescription'].invalid && (productform.controls['partdescription'].dirty || productform.controls['partdescription'].touched)" class="alert alert-danger">
+                                <div *ngIf="productform.controls['partdescription'].errors.required" style="font-size: 8px;">
+                                        Part Description is required.
+                              </div>
+                            </div>
+                    </div>
+                        
+                        </div>
+                        
+                        <div class="col-md-6">
+                        
+                        <div class="form-group">
+                        <label style="font-size: 16px;">SMU <span style="color: red;">*</span></label>
+                        <input type="text" formControlName="smu" class="form-control" placeholder="SMU" />
+                        <div *ngIf="productform.controls['smu'].invalid && (productform.controls['smu'].dirty || productform.controls['smu'].touched)" class="alert alert-danger">
+                                <div *ngIf="productform.controls['smu'].errors.required" style="font-size: 8px;">
+                                        Smu is required.
+                              </div>
+                            </div>
+                    </div>
+                        <div class="form-group">
+                        <label style="font-size: 16px;">Unit Rate <span style="color: red;">*</span></label>
+                        <input type="text" formControlName="unitrate" class="form-control" placeholder="Unit Rate" />
+                        <div *ngIf="productform.controls['unitrate'].invalid && (productform.controls['unitrate'].dirty || productform.controls['unitrate'].touched)" class="alert alert-danger">
+                                <div *ngIf="productform.controls['unitrate'].errors.required" style="font-size: 8px;">
+                                        Unitrate is required.
+                              </div>
+                            </div>
+                    </div>
+                        
+                        </div>
+                        <div class="col-sm-6">
+                        <div class="form-group">
+                        <label style="font-size: 16px;">Alternate SMU <span style="color: red;">*</span></label>
+                        <input type="text" formControlName="alternatesmu" class="form-control" placeholder="Alternate SMU "  />
+                        <div *ngIf="productform.controls['alternatesmu'].invalid && (productform.controls['alternatesmu'].dirty || productform.controls['alternatesmu'].touched)" class="alert alert-danger">
+                                <div *ngIf="productform.controls['alternatesmu'].errors.required" style="font-size: 8px;">
+                                        Alternatesmu is required.
+                              </div>
+                            </div>
+                    </div>
+                        </div>
+                        </div>
+                        <button type="submit" value="submit"   [disabled]="!productform.valid" class="btn btn-success">Submit</button>
+                        
+                    </form>
+                        </div>
+                        </div>
+                    
+                </div>
+            </div>
+            
+</div>

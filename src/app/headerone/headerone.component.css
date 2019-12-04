@@ -1,0 +1,16 @@
+.card-body{
+    font-family: 'Circular Std Book';
+    font-size: 14px;
+    visibility: visible!important;
+   
+   }
+   .middle{
+       text-align: center;
+       font-size: 16px;
+   }
+   .active.card:hover{
+    cursor: pointer;
+    background-color: blue;
+    
+   }
+  
