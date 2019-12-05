@@ -15,6 +15,8 @@ import { SidenavoneComponent } from './sidenavone/sidenavone.component';
 import { RaiseticketComponent } from './raiseticket/raiseticket.component';
 import { AspcrmComponent } from './aspcrm/aspcrm.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
+import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
+import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 const routes: Routes = [
@@ -34,6 +36,8 @@ const routes: Routes = [
 {path:'raiseticket',component:RaiseticketComponent},
 {path:'aspcrm',component:AspcrmComponent},
 {path:'asptechnician',component:AsptechnicianComponent},
+{path:'skyzenparts',component:SkyzenpartsComponent},
+{path:'addpartsskyzen',component:AddpartsskyzenComponent},
 
   {path:'**',component:PagenotfoundComponent} 
  

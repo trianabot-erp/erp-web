@@ -27,6 +27,8 @@ import { SidenavoneComponent } from './sidenavone/sidenavone.component';
 import { RaiseticketComponent } from './raiseticket/raiseticket.component';
 import { AspcrmComponent } from './aspcrm/aspcrm.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
+import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
+import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
 
 
 
@@ -52,7 +54,9 @@ import { AsptechnicianComponent } from './asptechnician/asptechnician.component'
     SidenavoneComponent,
     RaiseticketComponent,
     AspcrmComponent,
-    AsptechnicianComponent
+    AsptechnicianComponent,
+    SkyzenpartsComponent,
+    AddpartsskyzenComponent
   ],
   imports: [
     BrowserModule,

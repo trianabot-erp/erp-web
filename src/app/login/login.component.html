@@ -1,95 +1,68 @@
-
 <section class="login-block">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-4 login-sec">
-                <img class="logo" src="../../assets/skyzen.png">
-                
-                <h5 style="text-align: center;
-                color: lightslategrey;">Please enter your user information</h5>
-                
-                <br>
-                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label  class="text-uppercase"><i class="fa fa-user" aria-hidden="true"></i>Username</label>
-        <input type="text" placeholder="Email" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-          <div *ngIf="f.email.errors.required" style="color: red;">Email is required</div>
-          <div *ngIf="f.email.errors.email"  style="color: red;">Email must be a valid email address</div>
-      </div>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1" class="text-uppercase"><i class="fa fa-key" aria-hidden="true"></i>Password</label>
-        <input type="password"  placeholder="Password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-          <div *ngIf="f.password.errors.required"  style="color: red;">Password is required</div>
-          <div *ngIf="f.password.errors.minlength"  style="color: red;">Password must be at least 6 characters</div>
-      </div>
-      </div>
-      
-      
-        <div class="form-check">
-          <label>
-          <input type="checkbox"  checked="checked" name="remember"style="margin-left: -11px;" > Remember me
-          </label>
-                
-          <div class="row">
-            <button type="submit" value="submit"   [disabled]="!loginForm.valid" class="btn btn-login" (click)="onSubmit()" style="width:100px;border-radius: 24px; margin-left: 126px;" >login</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 login-sec">
+        <img class="logo" src="../../assets/skyzen.png">
+        <h5 style="text-align: center;color: lightslategrey;">Please enter your user information</h5>
+        <br>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label class="text-uppercase"><i class="fa fa-user" aria-hidden="true"></i>Username</label>
+            <input type="text" placeholder="Email" formControlName="email" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required" style="color: red;">Email is required</div>
+              <div *ngIf="f.email.errors.email" style="color: red;">Email must be a valid email address</div>
+            </div>
           </div>
-                    
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="text-uppercase"><i class="fa fa-key"
+                aria-hidden="true"></i>Password</label>
+            <input type="password" placeholder="Password" formControlName="password" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required" style="color: red;">Password is required</div>
+              <div *ngIf="f.password.errors.minlength" style="color: red;">Password must be at least 6 characters</div>
+            </div>
+          </div>
+          <div class="form-check">
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-left: -11px;"> Remember me
+            </label>
+            <div class="row">
+              <button type="submit" value="submit" [disabled]="!loginForm.valid" class="btn btn-login"
+                (click)="onSubmit()" style="width:100px;border-radius: 24px; margin-left: 126px;">login</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
-    </div>
-
-
-
-
-
-
       <div class="col-md-8 banner-sec">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                  
-                   
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="../../assets/scroll3.jpeg" alt="Los Angeles">
-                      </div>
-                  
-                      <div class="item">
-                        <img src="../../assets/scroll2.jpg" alt="Chicago">
-                      </div>
-                  
-                      <div class="item">
-                        <img src="../../assets/scroll1.jpg" alt="New York">
-                      </div>
-                    </div>
-                  
-                  
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-       
-       </div>
-       
-          
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="../../assets/scroll3.jpeg" alt="Los Angeles">
+            </div>
+            <div class="item">
+              <img src="../../assets/scroll2.jpg" alt="Chicago">
+            </div>
+            <div class="item">
+              <img src="../../assets/scroll1.jpg" alt="New York">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-      </div>
-      
-      
-      
-   
-    
-        
-    
+    </div>
+  </div>
