@@ -1,0 +1,16 @@
+.parts{
+    color: rgb(12, 11, 11);
+    font-family: 'Circular Std Book';
+    height: 57px;
+    font-size: 18px;
+    }
+    .form-content
+    {
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+    }
+    
+    .form-control{
+    border-radius:1.5rem;
+    }
