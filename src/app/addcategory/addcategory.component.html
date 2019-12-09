@@ -1,12 +1,9 @@
 <div class="container-fluid">
     <div class="row" style="margin-top:20px;">
-
         <div class="col-sm-3">
             <app-sidenav></app-sidenav>
         </div>
-    
         <div class="col-sm-9" style="margin-top:27px;font-size: 25px;">
-    
             Category Master
             <hr>
             <p style="font-size: 12px;">Setting > <b> Add Product Master</b> </p>
@@ -18,7 +15,6 @@
                 </div>
                 <div class="card-body">
                     <form [formGroup]="categoryform" (ngSubmit)="onSubmit()">
-    
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label style="font-size: 16px;">Brand Name <span style="color: red;">*</span></label>
@@ -26,7 +22,8 @@
                                     placeholder="Brand Name" />
                                 <div *ngIf="categoryform.controls['brandname'].invalid && (categoryform.controls['brandname'].dirty || categoryform.controls['brandname'].touched)"
                                     class="alert alert-danger">
-                                    <div *ngIf="categoryform.controls['brandname'].errors.required" style="font-size: 8px;">
+                                    <div *ngIf="categoryform.controls['brandname'].errors.required"
+                                        style="font-size: 8px;">
                                         BrandName is required.
                                     </div>
                                 </div>
@@ -48,7 +45,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label style="font-size: 16px;">Category Alias Name <span style="color: red;">*</span></label>
+                                <label style="font-size: 16px;">Category Alias Name <span
+                                        style="color: red;">*</span></label>
                                 <input type="text" formControlName="categoryaliasname" class="form-control"
                                     placeholder="Category Alias Name" />
                                 <div *ngIf="categoryform.controls['categoryaliasname'].invalid && (categoryform.controls['categoryaliasname'].dirty || categoryform.controls['categoryaliasname'].touched)"
@@ -60,12 +58,12 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" value="submit"   [disabled]="!categoryform.valid" style="width: 100px;
-                margin-left: 305px;" class="btn btn-success">Submit</button>
+                        <button type="submit" value="submit" [disabled]="!categoryform.valid"
+                            style="width: 100px;margin-left: 305px;" class="btn btn-success">Submit</button>
                     </form>
                 </div>
             </div>
-    
+
         </div>
     </div>
 </div>

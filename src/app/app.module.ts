@@ -29,6 +29,8 @@ import { AspcrmComponent } from './aspcrm/aspcrm.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
 import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
 import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
+import { ProductsComponent } from './products/products.component';
+import { SidenavproductsComponent } from './sidenavproducts/sidenavproducts.component';
 
 
 
@@ -56,7 +58,9 @@ import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.compone
     AspcrmComponent,
     AsptechnicianComponent,
     SkyzenpartsComponent,
-    AddpartsskyzenComponent
+    AddpartsskyzenComponent,
+    ProductsComponent,
+    SidenavproductsComponent
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,8 @@ import { AspcrmComponent } from './aspcrm/aspcrm.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
 import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
 import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
+import { ProductsComponent } from './products/products.component';
+import { SidenavproductsComponent } from './sidenavproducts/sidenavproducts.component';
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 const routes: Routes = [
@@ -38,7 +40,8 @@ const routes: Routes = [
 {path:'asptechnician',component:AsptechnicianComponent},
 {path:'skyzenparts',component:SkyzenpartsComponent},
 {path:'addpartsskyzen',component:AddpartsskyzenComponent},
-
+{path:'products',component:ProductsComponent},
+{path:'sidenavproducts',component:SidenavproductsComponent},
   {path:'**',component:PagenotfoundComponent} 
  
   

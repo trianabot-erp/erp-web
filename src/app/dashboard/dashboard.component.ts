@@ -18,5 +18,7 @@ export class DashboardComponent implements OnInit {
   crm(){
     this.router.navigate(['/crm']);
   }
-
+  product(){
+    this.router.navigate(['/products'])
+  }
 }
