@@ -31,6 +31,10 @@ import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
 import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
 import { ProductsComponent } from './products/products.component';
 import { SidenavproductsComponent } from './sidenavproducts/sidenavproducts.component';
+import { ProductbrandComponent } from './productbrand/productbrand.component';
+import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
+import { ProductcategoryComponent } from './productcategory/productcategory.component';
+import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
 
 
 
@@ -60,7 +64,11 @@ import { SidenavproductsComponent } from './sidenavproducts/sidenavproducts.comp
     SkyzenpartsComponent,
     AddpartsskyzenComponent,
     ProductsComponent,
-    SidenavproductsComponent
+    SidenavproductsComponent,
+    ProductbrandComponent,
+    ProductaddbrandComponent,
+    ProductcategoryComponent,
+    ProductaddcategoryComponent
   ],
   imports: [
     BrowserModule,
