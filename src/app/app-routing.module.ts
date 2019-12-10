@@ -15,6 +15,17 @@ import { SidenavoneComponent } from './sidenavone/sidenavone.component';
 import { RaiseticketComponent } from './raiseticket/raiseticket.component';
 import { AspcrmComponent } from './aspcrm/aspcrm.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
+import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
+import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
+import { ProductsComponent } from './products/products.component';
+import { SidenavproductsComponent } from './sidenavproducts/sidenavproducts.component';
+import { ProductbrandComponent } from './productbrand/productbrand.component';
+import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
+import { ProductcategoryComponent } from './productcategory/productcategory.component';
+import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
+import { AdduserComponent } from './adduser/adduser.component';
+
+
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 const routes: Routes = [
@@ -34,7 +45,15 @@ const routes: Routes = [
 {path:'raiseticket',component:RaiseticketComponent},
 {path:'aspcrm',component:AspcrmComponent},
 {path:'asptechnician',component:AsptechnicianComponent},
-
+{path:'skyzenparts',component:SkyzenpartsComponent},
+{path:'addpartsskyzen',component:AddpartsskyzenComponent},
+{path:'products',component:ProductsComponent},
+{path:'sidenavproducts',component:SidenavproductsComponent},
+{path:'productbrand',component:ProductbrandComponent},
+{path:'productaddbrand',component:ProductaddbrandComponent},
+{path:'productcategory',component:ProductcategoryComponent},
+{path:'productaddcategory',component:ProductaddcategoryComponent},
+{path:'adduser',component:AdduserComponent},
   {path:'**',component:PagenotfoundComponent} 
  
   

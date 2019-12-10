@@ -22,15 +22,19 @@ import { AddcategoryComponent } from './addcategory/addcategory.component';
 import { AspComponent } from './asp/asp.component';
 import { AddaspComponent } from './addasp/addasp.component';
 import { CrmComponent } from './crm/crm.component';
-
 import { SidenavoneComponent } from './sidenavone/sidenavone.component';
 import { RaiseticketComponent } from './raiseticket/raiseticket.component';
 import { AspcrmComponent } from './aspcrm/aspcrm.component';
+import { AdduserComponent } from './adduser/adduser.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
-
-
-
-
+import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
+import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
+import { ProductsComponent } from './products/products.component';
+import { SidenavproductsComponent } from './sidenavproducts/sidenavproducts.component';
+import { ProductbrandComponent } from './productbrand/productbrand.component';
+import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
+import { ProductcategoryComponent } from './productcategory/productcategory.component';
+import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,16 @@ import { AsptechnicianComponent } from './asptechnician/asptechnician.component'
     SidenavoneComponent,
     RaiseticketComponent,
     AspcrmComponent,
-    AsptechnicianComponent
+    AsptechnicianComponent,
+    SkyzenpartsComponent,
+    AddpartsskyzenComponent,
+    ProductsComponent,
+    SidenavproductsComponent,
+    ProductbrandComponent,
+    ProductaddbrandComponent,
+    ProductcategoryComponent,
+    ProductaddcategoryComponent,
+    AdduserComponent
   ],
   imports: [
     BrowserModule,
