@@ -22,7 +22,6 @@ import { AddcategoryComponent } from './addcategory/addcategory.component';
 import { AspComponent } from './asp/asp.component';
 import { AddaspComponent } from './addasp/addasp.component';
 import { CrmComponent } from './crm/crm.component';
-
 import { SidenavoneComponent } from './sidenavone/sidenavone.component';
 import { RaiseticketComponent } from './raiseticket/raiseticket.component';
 import { AspcrmComponent } from './aspcrm/aspcrm.component';
@@ -35,10 +34,6 @@ import { ProductbrandComponent } from './productbrand/productbrand.component';
 import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
 import { ProductcategoryComponent } from './productcategory/productcategory.component';
 import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
-
-
-
-
 
 @NgModule({
   declarations: [

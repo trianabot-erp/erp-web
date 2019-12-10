@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenavproducts',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavproductsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
-  
+  productbrand(){
+this.router.navigate(['/productbrand'])
+  }
+  productcategory(){
+    this.router.navigate(['/productcategory'])
+  }
 }
