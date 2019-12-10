@@ -22,15 +22,10 @@ import { AddcategoryComponent } from './addcategory/addcategory.component';
 import { AspComponent } from './asp/asp.component';
 import { AddaspComponent } from './addasp/addasp.component';
 import { CrmComponent } from './crm/crm.component';
-
 import { SidenavoneComponent } from './sidenavone/sidenavone.component';
 import { RaiseticketComponent } from './raiseticket/raiseticket.component';
 import { AspcrmComponent } from './aspcrm/aspcrm.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
-
-
-
-
 
 @NgModule({
   declarations: [
