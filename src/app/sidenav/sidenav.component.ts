@@ -21,4 +21,7 @@ export class SidenavComponent implements OnInit {
   category(){
     this.router.navigate(['/category']);
   }
+  skyzenparts(){
+    this.router.navigate(['/skyzenparts'])
+  }
 }

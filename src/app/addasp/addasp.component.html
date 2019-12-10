@@ -1,187 +1,201 @@
 <div class="container-fluid">
-<div class="row" style="margin-top:20px;">
-    <div class="col-sm-3">
-        <app-sidenav></app-sidenav>
-    </div>
-
-    <div class="col-sm-9" style="margin-top:27px;font-size: 25px;">
-        Add Products
-        <hr>
-        <p style="font-size: 12px;">Setting ><b>Add Product Master</b> </p>
-        <div class="card" style="width: 83rem;">
-            <div class="card-header products">
-                Add Products
-                <button style="float:right;border-radius: 24px;font-size: 14px;" type="button" (click)="viewproduct()"
-                    class="btn btn-dark">View Products</button>
-            </div>
-            <div class="card-body">
-
+    <div class="row" style="margin-top:20px;">
+        <div class="col-sm-3">
+            <app-sidenav></app-sidenav>
+        </div>
+        <div class="col-sm-9" style="margin-top:27px;font-size: 25px;">
+            Add Products
+            <hr>
+            <p style="font-size: 12px;">Setting ><b>Add Product Master</b> </p>
+            <div class="card" style="width: 83rem;">
+                <div class="card-header products">
+                    Add Products
+                    <button style="float:right;border-radius: 24px;font-size: 14px;" type="button"
+                        (click)="viewproduct()" class="btn btn-dark">View Products</button>
+                </div>
+                <div class="card-body">
                     <form [formGroup]="aspform" (ngSubmit)="onSubmit()">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Asp Name <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="aspname" class="form-control" placeholder="Asp Name" value="" />
-                                <div *ngIf="aspform.controls['aspname'].invalid && (aspform.controls['aspname'].dirty || aspform.controls['aspname'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['aspname'].errors.required" style="font-size: 8px;">
-                                    Aspname is required.
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Asp Name <span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="aspname" class="form-control"
+                                        placeholder="Asp Name" value="" />
+                                    <div *ngIf="aspform.controls['aspname'].invalid && (aspform.controls['aspname'].dirty || aspform.controls['aspname'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['aspname'].errors.required"
+                                            style="font-size: 8px;">
+                                            Aspname is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Email <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="email" class="form-control" placeholder="Email" value="" />
-                                <div *ngIf="aspform.controls['email'].invalid && (aspform.controls['email'].dirty || aspform.controls['email'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['email'].errors.required" style="font-size: 8px;">
-                                    Email is required.
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Email <span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="email" class="form-control" placeholder="Email"
+                                        value="" />
+                                    <div *ngIf="aspform.controls['email'].invalid && (aspform.controls['email'].dirty || aspform.controls['email'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['email'].errors.required" style="font-size: 8px;">
+                                            Email is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Contact Person <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="contactperson" class="form-control" placeholder="Contact Person" value="" />
-                                <div *ngIf="aspform.controls['contactperson'].invalid && (aspform.controls['contactperson'].dirty || aspform.controls['contactperson'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['contactperson'].errors.required" style="font-size: 8px;">
-                                    Contactperson is required.
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Contact Person <span
+                                            style="color: red;">*</span></label>
+                                    <input type="text" formControlName="contactperson" class="form-control"
+                                        placeholder="Contact Person" value="" />
+                                    <div *ngIf="aspform.controls['contactperson'].invalid && (aspform.controls['contactperson'].dirty || aspform.controls['contactperson'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['contactperson'].errors.required"
+                                            style="font-size: 8px;">
+                                            Contactperson is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-
-
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Contact Number <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="contactnumber" class="form-control" placeholder="Contact Number" value="" />
-                                <div *ngIf="aspform.controls['contactnumber'].invalid && (aspform.controls['contactnumber'].dirty || aspform.controls['contactnumber'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['contactnumber'].errors.required" style="font-size: 8px;">
-                                    Contactnumber is required.
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Contact Number <span
+                                            style="color: red;">*</span></label>
+                                    <input type="text" formControlName="contactnumber" class="form-control"
+                                        placeholder="Contact Number" value="" />
+                                    <div *ngIf="aspform.controls['contactnumber'].invalid && (aspform.controls['contactnumber'].dirty || aspform.controls['contactnumber'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['contactnumber'].errors.required"
+                                            style="font-size: 8px;">
+                                            Contactnumber is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Alternate Contact Number <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="alternatecontact" class="form-control" placeholder="Alternate Contact Number"
-                                    value="" />
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Alternate Contact Number <span
+                                            style="color: red;">*</span></label>
+                                    <input type="text" formControlName="alternatecontact" class="form-control"
+                                        placeholder="Alternate Contact Number" value="" />
                                     <div *ngIf="aspform.controls['alternatecontact'].invalid && (aspform.controls['alternatecontact'].dirty || aspform.controls['alternatecontact'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['alternatecontact'].errors.required" style="font-size: 8px;">
-                                    Alternatecontact is required.
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['alternatecontact'].errors.required"
+                                            style="font-size: 8px;">
+                                            Alternatecontact is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">State <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="state" class="form-control" placeholder="State" value="" />
-                                <div *ngIf="aspform.controls['state'].invalid && (aspform.controls['state'].dirty || aspform.controls['state'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['state'].errors.required" style="font-size: 8px;">
-                                    State is required.
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">State <span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="state" class="form-control" placeholder="State"
+                                        value="" />
+                                    <div *ngIf="aspform.controls['state'].invalid && (aspform.controls['state'].dirty || aspform.controls['state'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['state'].errors.required" style="font-size: 8px;">
+                                            State is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-
-
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Address1<span style="color: red;">*</span></label>
-                                <input type="text" formControlName="addressone" class="form-control" placeholder="Address1" value="" />
-                                <div *ngIf="aspform.controls['addressone'].invalid && (aspform.controls['addressone'].dirty || aspform.controls['addressone'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['addressone'].errors.required" style="font-size: 8px;">
-                                    Addressone is required.
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Address1<span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="addressone" class="form-control"
+                                        placeholder="Address1" value="" />
+                                    <div *ngIf="aspform.controls['addressone'].invalid && (aspform.controls['addressone'].dirty || aspform.controls['addressone'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['addressone'].errors.required"
+                                            style="font-size: 8px;">
+                                            Addressone is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Address2 <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="addresstwo" class="form-control" placeholder="Address2" value="" />
-                                <div *ngIf="aspform.controls['addresstwo'].invalid && (aspform.controls['addresstwo'].dirty || aspform.controls['addresstwo'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['addresstwo'].errors.required" style="font-size: 8px;">
-                                    Addresstwo is required.
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Address2 <span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="addresstwo" class="form-control"
+                                        placeholder="Address2" value="" />
+                                    <div *ngIf="aspform.controls['addresstwo'].invalid && (aspform.controls['addresstwo'].dirty || aspform.controls['addresstwo'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['addresstwo'].errors.required"
+                                            style="font-size: 8px;">
+                                            Addresstwo is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">City <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="city" class="form-control" placeholder="City" value="" />
-                                <div *ngIf="aspform.controls['city'].invalid && (aspform.controls['city'].dirty || aspform.controls['city'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['city'].errors.required" style="font-size: 8px;">
-                                    City is required.
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">City <span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="city" class="form-control" placeholder="City"
+                                        value="" />
+                                    <div *ngIf="aspform.controls['city'].invalid && (aspform.controls['city'].dirty || aspform.controls['city'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['city'].errors.required" style="font-size: 8px;">
+                                            City is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-
-
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Pincode<span style="color: red;">*</span></label>
-                                <input type="text" formControlName="pincode" class="form-control" placeholder="Pincode" value="" />
-                                <div *ngIf="aspform.controls['pincode'].invalid && (aspform.controls['pincode'].dirty || aspform.controls['pincode'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['pincode'].errors.required" style="font-size: 8px;">
-                                    Pincode is required.
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Pincode<span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="pincode" class="form-control"
+                                        placeholder="Pincode" value="" />
+                                    <div *ngIf="aspform.controls['pincode'].invalid && (aspform.controls['pincode'].dirty || aspform.controls['pincode'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['pincode'].errors.required"
+                                            style="font-size: 8px;">
+                                            Pincode is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Latitude <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="latitude" class="form-control" placeholder="Latitude" value="" />
-                                <div *ngIf="aspform.controls['latitude'].invalid && (aspform.controls['latitude'].dirty || aspform.controls['latitude'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['latitude'].errors.required" style="font-size: 8px;">
-                                    Latitude is required.
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Latitude <span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="latitude" class="form-control"
+                                        placeholder="Latitude" value="" />
+                                    <div *ngIf="aspform.controls['latitude'].invalid && (aspform.controls['latitude'].dirty || aspform.controls['latitude'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['latitude'].errors.required"
+                                            style="font-size: 8px;">
+                                            Latitude is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label style="font-size: 16px;">Longitude <span style="color: red;">*</span></label>
-                                <input type="text" formControlName="longitude" class="form-control" placeholder="Longitude" value="" />
-                                <div *ngIf="aspform.controls['longitude'].invalid && (aspform.controls['longitude'].dirty || aspform.controls['longitude'].touched)"
-                                class="alert alert-danger">
-                                <div *ngIf="aspform.controls['longitude'].errors.required" style="font-size: 8px;">
-                                    Longitude is required.
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label style="font-size: 16px;">Longitude <span style="color: red;">*</span></label>
+                                    <input type="text" formControlName="longitude" class="form-control"
+                                        placeholder="Longitude" value="" />
+                                    <div *ngIf="aspform.controls['longitude'].invalid && (aspform.controls['longitude'].dirty || aspform.controls['longitude'].touched)"
+                                        class="alert alert-danger">
+                                        <div *ngIf="aspform.controls['longitude'].errors.required"
+                                            style="font-size: 8px;">
+                                            Longitude is required.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-
-
-                    </div>
-                    <button style="width: 59px;" type="submit" [disabled]="!aspform.valid" class="btn btn-success">Submit</button>
-                </form>
+                        <button style="width: 59px;" type="submit" [disabled]="!aspform.valid"
+                            class="btn btn-success">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>

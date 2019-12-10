@@ -3,27 +3,25 @@
         <app-sidenavone></app-sidenavone>
     </div>
     <div class="col-sm-9" style="margin-top: 50px;">
-            <h4>CRM Overview</h4> <hr>
-            <div class="card">
-            
+        <h4>CRM Overview</h4>
+        <hr>
+        <div class="card">
             <div>
-            <mat-form-field color="accent">
-            <mat-label>From Date</mat-label>
-            <input matInput [matDatepicker]="picker1">
-            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-            <mat-datepicker #picker1></mat-datepicker>
-            </mat-form-field>
+                <mat-form-field color="accent">
+                    <mat-label>From Date</mat-label>
+                    <input matInput [matDatepicker]="picker1">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
             </div>
-            <div> 
-            <mat-form-field color="accent">
-            <mat-label>To Date</mat-label>
-            <input matInput [matDatepicker]="picker2">
-            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-            <mat-datepicker #picker2 color="primary"></mat-datepicker>
-            </mat-form-field>
+            <div>
+                <mat-form-field color="accent">
+                    <mat-label>To Date</mat-label>
+                    <input matInput [matDatepicker]="picker2">
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                </mat-form-field>
             </div>
-            </div> 
-            
-            
-            </div>
+        </div>
+    </div>
 </div>

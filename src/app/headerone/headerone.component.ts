@@ -17,6 +17,8 @@ export class HeaderoneComponent implements OnInit {
 crm(){
   this.router.navigate(['/crm']);
 }
-  
+Product(){
+  this.router.navigate(['/products'])
+}
   
 }
