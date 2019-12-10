@@ -25,6 +25,7 @@ import { CrmComponent } from './crm/crm.component';
 import { SidenavoneComponent } from './sidenavone/sidenavone.component';
 import { RaiseticketComponent } from './raiseticket/raiseticket.component';
 import { AspcrmComponent } from './aspcrm/aspcrm.component';
+import { AdduserComponent } from './adduser/adduser.component';
 import { AsptechnicianComponent } from './asptechnician/asptechnician.component';
 import { SkyzenpartsComponent } from './skyzenparts/skyzenparts.component';
 import { AddpartsskyzenComponent } from './addpartsskyzen/addpartsskyzen.component';
@@ -63,7 +64,8 @@ import { ProductaddcategoryComponent } from './productaddcategory/productaddcate
     ProductbrandComponent,
     ProductaddbrandComponent,
     ProductcategoryComponent,
-    ProductaddcategoryComponent
+    ProductaddcategoryComponent,
+    AdduserComponent
   ],
   imports: [
     BrowserModule,

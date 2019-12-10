@@ -11,6 +11,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  adduser(){
+    this.router.navigate(['/adduser']);
+  }
 logout(){
   this.router.navigate(['/login']);
 }

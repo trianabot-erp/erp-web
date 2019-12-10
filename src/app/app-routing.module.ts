@@ -23,6 +23,7 @@ import { ProductbrandComponent } from './productbrand/productbrand.component';
 import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
 import { ProductcategoryComponent } from './productcategory/productcategory.component';
 import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
+import { AdduserComponent } from './adduser/adduser.component';
 
 
 
@@ -52,6 +53,7 @@ const routes: Routes = [
 {path:'productaddbrand',component:ProductaddbrandComponent},
 {path:'productcategory',component:ProductcategoryComponent},
 {path:'productaddcategory',component:ProductaddcategoryComponent},
+{path:'adduser',component:AdduserComponent},
   {path:'**',component:PagenotfoundComponent} 
  
   
