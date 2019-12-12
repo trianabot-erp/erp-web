@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder , FormGroup ,Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-productaddbrand',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./productaddbrand.component.css']
 })
 export class ProductaddbrandComponent implements OnInit {
-
-  constructor() { }
-
+  addbrand: FormGroup;
+  constructor(private fb:FormBuilder, private router:Router) { 
+  this.addbrand = this.fb.group({
+    brandname:['', Validators.required],
+    fliename:['', Validators.required]
+  });
+}
   ngOnInit() {
   }
-
-}
+  view(){
+    this.router.navigate(['/productbrand']);
+  }
+  }

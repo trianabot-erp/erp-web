@@ -13,9 +13,15 @@ export class SidenavproductsComponent implements OnInit {
   ngOnInit() {
   }
   productbrand(){
-this.router.navigate(['/productbrand'])
+  this.router.navigate(['/productbrand']);
   }
   productcategory(){
-    this.router.navigate(['/productcategory'])
+    this.router.navigate(['/productcategory']);
+  }
+  productsubcategory(){
+    this.router.navigate(['/productsubcategory']);
+  }
+  productshsn(){
+    this.router.navigate(['/productshsn']);
   }
 }

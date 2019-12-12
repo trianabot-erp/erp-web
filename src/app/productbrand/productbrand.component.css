@@ -1,0 +1,22 @@
+.width{
+    font-size: 18px;
+}
+.p{
+    font-size: 11px;
+}
+.card{
+    width: 91rem;
+     height: 80vh;
+     font-size: 14px;
+}
+.option{
+    padding: 10px;
+}
+.card-body{
+    padding: 0px;
+}
+.search{
+    margin: auto;
+    text-indent: 210px;
+
+}

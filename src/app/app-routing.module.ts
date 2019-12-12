@@ -25,6 +25,10 @@ import { ProductcategoryComponent } from './productcategory/productcategory.comp
 import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
 import { NewpasswordgenerateComponent } from './newpasswordgenerate/newpasswordgenerate.component';
 import { AdduserComponent } from './adduser/adduser.component';
+import { ProductsubcategoryComponent } from './productsubcategory/productsubcategory.component';
+import { ProductaddsubcategoryComponent } from './productaddsubcategory/productaddsubcategory.component';
+import { ProductshsnComponent } from './productshsn/productshsn.component';
+import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.component';
 
 
 
@@ -57,6 +61,10 @@ const routes: Routes = [
 {path:'productaddcategory',component:ProductaddcategoryComponent},
 {path:'newpasswordgenerate',component:NewpasswordgenerateComponent},
 {path:'adduser',component:AdduserComponent},
+{path:'productsubcategory',component:ProductsubcategoryComponent},
+{path:'productaddsubcategory',component:ProductaddsubcategoryComponent},
+{path:'productshsn',component:ProductshsnComponent},
+{path:'productsaddhsn',component:ProductsaddhsnComponent},
   {path:'**',component:PagenotfoundComponent} 
  
   

@@ -35,8 +35,11 @@ import { ProductbrandComponent } from './productbrand/productbrand.component';
 import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
 import { ProductcategoryComponent } from './productcategory/productcategory.component';
 import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
-import { NewpasswordgenerateComponent } from './newpasswordgenerate/newpasswordgenerate.component';
 
+import { NewpasswordgenerateComponent } from './newpasswordgenerate/newpasswordgenerate.component';
+import { ProductaddsubcategoryComponent } from './productaddsubcategory/productaddsubcategory.component';
+import { ProductshsnComponent } from './productshsn/productshsn.component';
+import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +71,10 @@ import { NewpasswordgenerateComponent } from './newpasswordgenerate/newpasswordg
     ProductcategoryComponent,
     ProductaddcategoryComponent,
     AdduserComponent,
-    NewpasswordgenerateComponent
+    ProductsubcategoryComponent,
+    ProductaddsubcategoryComponent,
+    ProductshsnComponent,
+    ProductsaddhsnComponent
   ],
   imports: [
     BrowserModule,
