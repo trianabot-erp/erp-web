@@ -35,6 +35,8 @@ import { ProductbrandComponent } from './productbrand/productbrand.component';
 import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
 import { ProductcategoryComponent } from './productcategory/productcategory.component';
 import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
+import { NewpasswordgenerateComponent } from './newpasswordgenerate/newpasswordgenerate.component';
+
 
 @NgModule({
   declarations: [
@@ -65,7 +67,8 @@ import { ProductaddcategoryComponent } from './productaddcategory/productaddcate
     ProductaddbrandComponent,
     ProductcategoryComponent,
     ProductaddcategoryComponent,
-    AdduserComponent
+    AdduserComponent,
+    NewpasswordgenerateComponent
   ],
   imports: [
     BrowserModule,

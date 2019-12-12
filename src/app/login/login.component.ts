@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
+      emailId: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(5)]]
     });
   }
@@ -22,25 +22,26 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     console.log(JSON.stringify(this.loginForm.value));
     let obj = {
-      email: this.loginForm.value.email,
+      emailId: this.loginForm.value.emailId,
       password: this.loginForm.value.password
     }
     this.http.login(obj).subscribe(data => {
       console.log("data from login service", data);
       
-
-      if (data['message'] == "login success") {
+alert(data['message']);
+    
         this.router.navigate(['/dashboard']);
-      }
-      else {
-
-        alert("provide valid email and password");
-      }
-
+    
 
     }, err => {
-      this.loginForm.reset();
+     if(err.status == 405){
       console.log("err", err['message']);
+      this.router.navigate(['/newpasswordgenerate']);
+     }
+     else{
+       alert("err");
+     }
+      
 
     })
 

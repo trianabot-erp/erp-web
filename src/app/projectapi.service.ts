@@ -6,15 +6,18 @@ import { HttpClient } from '@angular/common/http';
 export class ProjectapiService {
 
   constructor(private http:HttpClient) { }
-  postform(data){
-    return this.http.post('http://localhost:3000/appi/projectlogindata',data);
-  }
-  getdata(){
-    return this.http.get('http://localhost:3000/appi/projectgetdata');
-  }
-
+ 
   login(data){
-    return this.http.post('http://localhost:3000/appi/logindata',data);
+    return this.http.post('http://localhost:4040/users/login',data);
+  }
+  roledata(){
+    return this.http.get('http://localhost:4040/role/getallroles');
+  }
+  postuser(data){
+    return this.http.post('http://localhost:4040/users/createuser',data);
+  }
+  newuser(data){
+    return this.http.post('http://localhost:4040/users/generatepass',data);
   }
   addcategorydata(data){
     return this.http.post('http://localhost:3000/appi/addcategorydata',data);

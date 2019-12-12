@@ -14,7 +14,7 @@ export class AppComponent {
      
     router.events.forEach((event) => {
       if (event instanceof NavigationStart) {
-        if (event['url'] == '/login'||event['url']=="/"||event['url']=='/pagenotfound'||event['url']=='/adduser') {
+        if (event['url'] == '/login'||event['url']=="/"||event['url']=='/pagenotfound'||event['url']=='/adduser'||event['url']=='/newpasswordgenerate') {
           this.headershow = false;
         } else {
           this.headershow = true;
@@ -24,7 +24,7 @@ export class AppComponent {
     
     router.events.forEach((event) => {
       if (event instanceof NavigationStart) {
-        if (event['url']=='/login'||event['url']=='/'||event['url']=='/dashboard'||event['url']=='/pagenotfound'||event['url']=='/adduser') {
+        if (event['url']=='/login'||event['url']=='/'||event['url']=='/dashboard'||event['url']=='/pagenotfound'||event['url']=='/adduser'||event['url']=='/newpasswordgenerate') {
           this.show = false;
         } else {
           this.show = true;

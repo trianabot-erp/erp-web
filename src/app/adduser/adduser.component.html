@@ -29,131 +29,149 @@
 
                                     </div>
                                 </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="lastname">LastName</label>
-                                            <input type="text" class="form-control" formControlName="lastname"
-                                                placeholder="Enter lastname">
-                                                <div *ngIf="adduserform.controls['lastname'].invalid && (adduserform.controls['lastname'].dirty || adduserform.controls['lastname'].touched)"
-                                                class="alert alert-danger">
-                                                <div *ngIf="adduserform.controls['lastname'].errors.required"
-                                                    style="font-size: 10px;">
-                                                    Lastname is required.
-                                                </div>
-                                            </div>    
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="lastname">LastName</label>
+                                        <input type="text" class="form-control" formControlName="lastname"
+                                            placeholder="Enter lastname">
+                                        <div *ngIf="adduserform.controls['lastname'].invalid && (adduserform.controls['lastname'].dirty || adduserform.controls['lastname'].touched)"
+                                            class="alert alert-danger">
+                                            <div *ngIf="adduserform.controls['lastname'].errors.required"
+                                                style="font-size: 10px;">
+                                                Lastname is required.
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email Address</label>
-                                    <input type="text" placeholder="Email" formControlName="email" class="form-control"/>
-                                    <div *ngIf="adduserform.controls['email'].invalid && (adduserform.controls['email'].dirty || adduserform.controls['email'].touched)"
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email Address</label>
+                                <input type="text" placeholder="Email" formControlName="emailId" class="form-control" />
+                                <div *ngIf="adduserform.controls['emailId'].invalid && (adduserform.controls['emailId'].dirty || adduserform.controls['emailId'].touched)"
                                     class="alert alert-danger">
-                                    <div *ngIf="adduserform.controls['email'].errors.required"
+                                    <div *ngIf="adduserform.controls['emailId'].errors.required"
                                         style="font-size: 10px;">
                                         Email is required.
                                     </div>
-                                </div> 
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="Country">Country</label>
-                                            <input type="text" class="form-control" formControlName="country"placeholder="Country">
-                                            <div *ngIf="adduserform.controls['country'].invalid && (adduserform.controls['country'].dirty || adduserform.controls['country'].touched)"
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Country">Country</label>
+                                        <input type="text" class="form-control" formControlName="country"
+                                            placeholder="Country">
+                                        <div *ngIf="adduserform.controls['country'].invalid && (adduserform.controls['country'].dirty || adduserform.controls['country'].touched)"
                                             class="alert alert-danger">
                                             <div *ngIf="adduserform.controls['country'].errors.required"
                                                 style="font-size: 10px;">
                                                 Country is required.
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="state">State</label>
-                                            <input type="text" class="form-control" formControlName="state" placeholder="state">
-                                            <div *ngIf="adduserform.controls['state'].invalid && (adduserform.controls['state'].dirty || adduserform.controls['state'].touched)"
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <input type="text" class="form-control" formControlName="state"
+                                            placeholder="state">
+                                        <div *ngIf="adduserform.controls['state'].invalid && (adduserform.controls['state'].dirty || adduserform.controls['state'].touched)"
                                             class="alert alert-danger">
                                             <div *ngIf="adduserform.controls['state'].errors.required"
                                                 style="font-size: 10px;">
                                                 State is required.
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="mobile">Mobile</label>
-                                            <input type="number" class="form-control" formControlName="mobile"placeholder="Mobile">
-                                            <div *ngIf="adduserform.controls['mobile'].invalid && (adduserform.controls['mobile'].dirty || adduserform.controls['mobile'].touched)"
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="mobile">Mobile</label>
+                                        <input type="number" class="form-control" formControlName="mobile"
+                                            placeholder="Mobile">
+                                        <div *ngIf="adduserform.controls['mobile'].invalid && (adduserform.controls['mobile'].dirty || adduserform.controls['mobile'].touched)"
                                             class="alert alert-danger">
                                             <div *ngIf="adduserform.controls['mobile'].errors.required"
                                                 style="font-size: 10px;">
                                                 Mobilenumber is required.
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="pincode">Pincode</label>
-                                            <input type="number" class="form-control" formControlName="pincode" placeholder="pincode">
-                                            <div *ngIf="adduserform.controls['pincode'].invalid && (adduserform.controls['pincode'].dirty || adduserform.controls['pincode'].touched)"
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="pincode">Pincode</label>
+                                        <input type="number" class="form-control" formControlName="pincode"
+                                            placeholder="pincode">
+                                        <div *ngIf="adduserform.controls['pincode'].invalid && (adduserform.controls['pincode'].dirty || adduserform.controls['pincode'].touched)"
                                             class="alert alert-danger">
                                             <div *ngIf="adduserform.controls['pincode'].errors.required"
                                                 style="font-size: 10px;">
                                                 Pincode is required.
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="pincode">Gender</label><br>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <input class="form-check-input" type="radio" name="radio1" style="margin-left: -16px;
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="gender" >Gender</label><br>
+                                   
+                                    <!-- <div class="col-sm-3">
+                                        <input class="form-check-input" formControlName="gender" type="radio" style="margin-left: -16px;
                                                         margin-top: 1px;">
-                                            <label class="form-check-label">Male</label>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <input class="form-check-input" type="radio" name="radio1" style="margin-left: -16px;
-                                                        margin-top: 1px;">
-                                            <label class="form-check-label">Female</label>
-                                        </div>
-
+                                        <label class="form-check-label">Male</label>
                                     </div>
+                                    <div class="col-sm-3">
+                                        <input class="form-check-input" formControlName="gender" type="radio" style="margin-left: -16px;
+                                                        margin-top: 1px;">
+                                        <label class="form-check-label">Female</label>
+                                    </div> -->
+                                    <input type="radio" name="gender" formControlName="gender" value="male"> Male<br>
+                                    <input type="radio" name="gender" formControlName="gender" value="female"> Female<br>
 
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="role">Role</label>
-                                            <input type="text" class="form-control" formControlName="role" placeholder="select role">
-                                            <div *ngIf="adduserform.controls['role'].invalid && (adduserform.controls['role'].dirty || adduserform.controls['role'].touched)"
-                                            class="alert alert-danger">
-                                            <div *ngIf="adduserform.controls['role'].errors.required"
-                                                style="font-size: 10px;">
-                                                Role is required.
-                                            </div>
-                                        </div>
-                                        </div>
+                                </div>
+                            </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="role">Role</label>
+                                        <select class="form-control" formControlName="role"
+                                            (change)="getrolelist($event)" style="width: 277px; height: 25px; ">
+                                            <option *ngFor="let item of rolelist" value={{item._id}}>
+                                                {{item.roleName}}
+                                            </option>
+                                        </select>
+
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Complete Address</label>
+                                <input type="text" placeholder="address" formControlName="completeAddress"
+                                    class="form-control" />
+                                <div *ngIf="adduserform.controls['completeAddress'].invalid && (adduserform.controls['completeAddress'].dirty || adduserform.controls['completeAddress'].touched)"
+                                    class="alert alert-danger">
+                                    <div *ngIf="adduserform.controls['completeAddress'].errors.required"
+                                        style="font-size: 10px;">
+                                        Complete Address is required.
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="card-footer">
-                                <button type="submit" value="submit" [disabled]="!adduserform.valid"
-                                                        class="btn btn-success" style="width:100px">Submit</button>
-                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button type="submit" value="submit" class="btn btn-success"
+                                style="width:100px">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
