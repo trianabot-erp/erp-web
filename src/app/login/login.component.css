@@ -53,3 +53,7 @@ padding : 50px 0;
       font-weight:600;
     }
 
+    .modal fade{
+        width: 150px;
+        margin-left: 150px;
+    }
