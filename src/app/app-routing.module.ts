@@ -29,6 +29,8 @@ import { ProductsubcategoryComponent } from './productsubcategory/productsubcate
 import { ProductaddsubcategoryComponent } from './productaddsubcategory/productaddsubcategory.component';
 import { ProductshsnComponent } from './productshsn/productshsn.component';
 import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.component';
+import { ProductslistComponent } from './productslist/productslist.component';
+import { ProductaddproductslistComponent } from './productaddproductslist/productaddproductslist.component';
 
 
 
@@ -65,6 +67,8 @@ const routes: Routes = [
 {path:'productaddsubcategory',component:ProductaddsubcategoryComponent},
 {path:'productshsn',component:ProductshsnComponent},
 {path:'productsaddhsn',component:ProductsaddhsnComponent},
+{path:'productslist',component:ProductslistComponent},
+{path:'productaddproductslist',component:ProductaddproductslistComponent},
   {path:'**',component:PagenotfoundComponent} 
  
   

@@ -24,4 +24,7 @@ export class SidenavproductsComponent implements OnInit {
   productshsn(){
     this.router.navigate(['/productshsn']);
   }
+  productslist(){
+    this.router.navigate(['/productslist'])
+  }
 }

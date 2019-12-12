@@ -41,6 +41,8 @@ import { ProductsubcategoryComponent} from './productsubcategory/productsubcateg
 import { ProductaddsubcategoryComponent } from './productaddsubcategory/productaddsubcategory.component';
 import { ProductshsnComponent } from './productshsn/productshsn.component';
 import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.component';
+import { ProductslistComponent } from './productslist/productslist.component';
+import { ProductaddproductslistComponent } from './productaddproductslist/productaddproductslist.component';
 
 @NgModule({
   declarations: [
@@ -72,10 +74,13 @@ import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.compone
     ProductcategoryComponent,
     ProductaddcategoryComponent,
     AdduserComponent,
+    NewpasswordgenerateComponent,
     ProductsubcategoryComponent,
     ProductaddsubcategoryComponent,
     ProductshsnComponent,
-    ProductsaddhsnComponent
+    ProductsaddhsnComponent,
+    ProductslistComponent,
+    ProductaddproductslistComponent,
   ],
   imports: [
     BrowserModule,
