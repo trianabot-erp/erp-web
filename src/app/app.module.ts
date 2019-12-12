@@ -37,6 +37,7 @@ import { ProductcategoryComponent } from './productcategory/productcategory.comp
 import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
 
 import { NewpasswordgenerateComponent } from './newpasswordgenerate/newpasswordgenerate.component';
+import { ProductsubcategoryComponent} from './productsubcategory/productsubcategory.component';
 import { ProductaddsubcategoryComponent } from './productaddsubcategory/productaddsubcategory.component';
 import { ProductshsnComponent } from './productshsn/productshsn.component';
 import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.component';
