@@ -31,6 +31,7 @@ import { ProductshsnComponent } from './productshsn/productshsn.component';
 import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.component';
 import { ProductslistComponent } from './productslist/productslist.component';
 import { ProductaddproductslistComponent } from './productaddproductslist/productaddproductslist.component';
+import { AddroleComponent } from './addrole/addrole.component';
 
 
 
@@ -69,6 +70,7 @@ const routes: Routes = [
 {path:'productsaddhsn',component:ProductsaddhsnComponent},
 {path:'productslist',component:ProductslistComponent},
 {path:'productaddproductslist',component:ProductaddproductslistComponent},
+{path:'addrole',component:AddroleComponent},
   {path:'**',component:PagenotfoundComponent} 
  
   

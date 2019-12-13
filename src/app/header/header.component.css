@@ -11,8 +11,13 @@
     font-size: 16px;
     margin-left: -199px;
 }
-
-
+.abutton{
+width: 63px;
+    margin-left: 999px;
+    height: 26px;
+    font-size: 12px;
+    border-radius: 24px;
+}
   
   
   

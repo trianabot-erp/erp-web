@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ProjectapiService } from '../projectapi.service';
+
 @Component({
   selector: 'app-newpasswordgenerate',
   templateUrl: './newpasswordgenerate.component.html',

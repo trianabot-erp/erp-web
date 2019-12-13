@@ -43,6 +43,8 @@ import { ProductshsnComponent } from './productshsn/productshsn.component';
 import { ProductsaddhsnComponent } from './productsaddhsn/productsaddhsn.component';
 import { ProductslistComponent } from './productslist/productslist.component';
 import { ProductaddproductslistComponent } from './productaddproductslist/productaddproductslist.component';
+import { AddroleComponent } from './addrole/addrole.component';
+
 
 @NgModule({
   declarations: [
@@ -81,6 +83,8 @@ import { ProductaddproductslistComponent } from './productaddproductslist/produc
     ProductsaddhsnComponent,
     ProductslistComponent,
     ProductaddproductslistComponent,
+    AddroleComponent,
+    
   ],
   imports: [
     BrowserModule,

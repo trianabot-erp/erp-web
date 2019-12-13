@@ -16,6 +16,9 @@ export class ProjectapiService {
   postuser(data){
     return this.http.post('http://localhost:4040/users/createuser',data);
   }
+  createRole(data){
+    return this.http.post('http://localhost:4040/role/createrole',data);
+  }
   newuser(data){
     return this.http.post('http://localhost:4040/users/generatepass',data);
   }
