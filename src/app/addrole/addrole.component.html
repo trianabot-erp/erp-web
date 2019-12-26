@@ -1,72 +1,73 @@
 <section class="content">
     <div class="container-fluid" style="background-color: whitesmoke;height: 100vh;">
-    <div class="row">
-    <div class="col-sm-3">
-    
-    </div>
-    <div class="col-md-6" style="margin-top: 135px;">
-    
-    <div class="card card-primary" style="width:670px">
-    <div class="card-header">
-    <h3 class="card-title">Create Role</h3>
-    </div>
-    
-    <form [formGroup]="addroleform" (ngSubmit)="onSubmit()">
-    <div class="card-body">
-    <div class="row">
-    <div class="col-sm-6">
-    <div class="form-group">
-    <label for="roleId">RoleId</label>
-    <input type="text" class="form-control" formControlName="roleId"
-    placeholder="Enter roleId">
-    <div *ngIf="addroleform.controls['roleId'].invalid && (addroleform.controls['roleId'].dirty || addroleform.controls['roleId'].touched)"
-    class="alert alert-danger">
-    <div *ngIf="addroleform.controls['roleId'].errors.required"
-    style="font-size: 10px;">
-    RoleId is required.
-    </div>
-    </div>
-    
-    </div>
-    </div>
-    <div class="col-sm-6">
-    <div class="form-group">
-    <label for="roleName">RoleName</label>
-    <input type="text" class="form-control" formControlName="roleName"
-    placeholder="Enter roleName">
-    <div *ngIf="addroleform.controls['roleName'].invalid && (addroleform.controls['roleName'].dirty || addroleform.controls['roleName'].touched)"
-    class="alert alert-danger">
-    <div *ngIf="addroleform.controls['roleName'].errors.required"
-    style="font-size: 10px;">
-    RoleName is required.
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    </div>
-    
-    <div class="form-group">
-    <label for="roleDesc">RoleDesc</label>
-    <input type="text" placeholder="Email" formControlName="roleDesc" class="form-control" />
-    <div *ngIf="addroleform.controls['roleDesc'].invalid && (addroleform.controls['roleDesc'].dirty || addroleform.controls['roleDesc'].touched)"
-    class="alert alert-danger">
-    <div *ngIf="addroleform.controls['roleDesc'].errors.required"
-    style="font-size: 10px;">
-    RoleName is required.
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    <div class="card-footer">
-    <button type="submit" value="submit" [disabled]="!addroleform.valid" class="btn btn-success"
-    style="width:100px">Submit</button>
-    </div>
-    </form>
-    </div>
-    </div>
-    <div class="col-sm-3"> </div>
-    
-    </div>
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-md-6" style="margin-top: 135px;">
+
+                <div class="card card-primary" style="width:670px">
+                    <div class="card-header">
+                        <h3 class="card-title">Create Role</h3>
+                    </div>
+
+                    <form [formGroup]="addroleform" (ngSubmit)="onSubmit()" style="font-size: 15px;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="roleId">RoleId</label>
+                                        <input type="text" class="form-control" formControlName="roleId"
+                                            placeholder="Enter roleId">
+                                        <div *ngIf="addroleform.controls['roleId'].invalid && (addroleform.controls['roleId'].dirty || addroleform.controls['roleId'].touched)"
+                                            class="alert alert-danger">
+                                            <div *ngIf="addroleform.controls['roleId'].errors.required"
+                                                style="font-size: 10px;">
+                                                RoleId is required.
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="roleName">RoleName</label>
+                                        <input type="text" class="form-control" formControlName="roleName"
+                                            placeholder="Enter roleName">
+                                        <div *ngIf="addroleform.controls['roleName'].invalid && (addroleform.controls['roleName'].dirty || addroleform.controls['roleName'].touched)"
+                                            class="alert alert-danger">
+                                            <div *ngIf="addroleform.controls['roleName'].errors.required"
+                                                style="font-size: 10px;">
+                                                RoleName is required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="roleDesc">RoleDesc</label>
+                                <input type="text" placeholder="Email" formControlName="roleDesc"
+                                    class="form-control" />
+                                <div *ngIf="addroleform.controls['roleDesc'].invalid && (addroleform.controls['roleDesc'].dirty || addroleform.controls['roleDesc'].touched)"
+                                    class="alert alert-danger">
+                                    <div *ngIf="addroleform.controls['roleDesc'].errors.required"
+                                        style="font-size: 10px;">
+                                        RoleName is required.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button type="submit" value="submit" [disabled]="!addroleform.valid" class="btn btn-success"
+                                style="width:100px">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3"> </div>
+
+        </div>
     </div>

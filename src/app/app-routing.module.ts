@@ -41,7 +41,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
 {path:'sidenav',component:SidenavComponent},
   {path:'dashboard',component:DashboardComponent},
-{path:'',component:LoginComponent},  
+{path:'',component:LoginComponent, pathMatch: 'full'},  
 {path:'addproductskyzen',component:AddproductskyzenComponent},
 {path:'addcategory',component:AddcategoryComponent},
 {path:'category',component:CategoryComponent},
@@ -71,14 +71,17 @@ const routes: Routes = [
 {path:'productslist',component:ProductslistComponent},
 {path:'productaddproductslist',component:ProductaddproductslistComponent},
 {path:'addrole',component:AddroleComponent},
-  {path:'**',component:PagenotfoundComponent} 
+  {path:'**',component:PagenotfoundComponent},
  
+  
   
   
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes,{enableTracing:true})],
+  exports: [RouterModule],
+  providers: []
+
 })
 export class AppRoutingModule { }

@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
       emailId: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(5)]]
+      password: ['', [Validators.required]]
     });
   }
   get f() { return this.loginForm.controls; }
@@ -51,9 +51,5 @@ alert(data['message']);
     if (this.loginForm.invalid) {
       return;
     }
-
-
   }
-
-
 }

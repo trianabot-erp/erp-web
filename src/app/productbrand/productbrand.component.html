@@ -1,4 +1,4 @@
-<div class="container-fluid">
+
     <div class="row" style="margin-top:20px;">
         <div class="col-sm-3">
             <app-sidenavproducts></app-sidenavproducts>
@@ -9,7 +9,7 @@
             <p class="p">product > brand </p>
             <div class="card">
                 <div class="card-header products">
-                    <h2>Brand Lists</h2>
+                    <span><b style="font-size: 20px;">Brand Lists</b></span>
                     <button style="float:right;border-radius: 24px;font-size: 14px;" type="button" (click)="addbrand()"
                         class="btn btn-primary">Add Brand</button>
                 </div>
@@ -38,12 +38,10 @@
                     <table class="table">
                         <thead style="text-align: center;">
                             <tr>
-                                <th>BrandId</th>
-                                <th>BrandName</th>
-                                <th>BrandAliasName</th>
-                                <th>BrandLogo</th>
-                                <th>BrandStatus</th>
-                                <th>Company</th>
+                                <th>Brand Id</th>
+                                <th>Brand Name</th>
+                                <th>Brand AliasName</th>
+                                <th>Brand Logo</th>
                                 <th>Action</th>
                                  
                             </tr>
@@ -57,6 +55,7 @@
                                 <td>{{brands.brandStatus}}</td>
                                 <td>{{brands.company}}</td>
 
+                                <td>  </td>
                                 <td>
                                     <button type="button" class="btn btn-primary" style="border-radius: 5px;">Edit</button>&nbsp;&nbsp;
                                     <button type="button" class="btn btn-danger" style="border-radius: 5px;">Delete</button>
@@ -77,4 +76,3 @@
             </div>
         </div>
     </div>
-</div>

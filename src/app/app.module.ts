@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
@@ -35,7 +36,6 @@ import { ProductbrandComponent } from './productbrand/productbrand.component';
 import { ProductaddbrandComponent } from './productaddbrand/productaddbrand.component';
 import { ProductcategoryComponent } from './productcategory/productcategory.component';
 import { ProductaddcategoryComponent } from './productaddcategory/productaddcategory.component';
-
 import { NewpasswordgenerateComponent } from './newpasswordgenerate/newpasswordgenerate.component';
 import { ProductsubcategoryComponent} from './productsubcategory/productsubcategory.component';
 import { ProductaddsubcategoryComponent } from './productaddsubcategory/productaddsubcategory.component';
@@ -45,12 +45,11 @@ import { ProductslistComponent } from './productslist/productslist.component';
 import { ProductaddproductslistComponent } from './productaddproductslist/productaddproductslist.component';
 import { AddroleComponent } from './addrole/addrole.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent,
+    DashboardComponent, 
     HeaderComponent,
     PagenotfoundComponent,
     SettingComponent,
