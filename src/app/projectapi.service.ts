@@ -4,6 +4,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProjectapiService {
+  get(arg0: string) {
+    throw new Error("Method not implemented.");
+  }
 
   constructor(private http:HttpClient) { }
  
@@ -28,5 +31,18 @@ export class ProjectapiService {
   addgetcategory(){
     return this.http.get('http://localhost:3000/appi/addcatelist');
   }
+  createBrand(data){
+    return this.http.post('http://localhost:4040/brands/createbrand',data);
+  }
+  createlogo(data){
+    return this.http.post('http://localhost:4040/erp/uploads/brandlogo',data);
+  }
+  getbrand(){
+    return this.http.get('http://localhost:4040/brands/getallbrands');
+  }
+  createcat(data){
+    return this.http.post('http://localhost:4040/categoryes/createcategory',data);
+  }
+ 
   }
 

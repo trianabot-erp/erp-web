@@ -38,17 +38,25 @@
                     <table class="table">
                         <thead style="text-align: center;">
                             <tr>
-                                <th>S No</th>
-                                <th>Brand Name</th>
-                                <th>Brand Logo</th>
+                                <th>BrandId</th>
+                                <th>BrandName</th>
+                                <th>BrandAliasName</th>
+                                <th>BrandLogo</th>
+                                <th>BrandStatus</th>
+                                <th>Company</th>
                                 <th>Action</th>
+                                 
                             </tr>
                         </thead>
                         <tbody style="text-align: center;">
-                            <tr class="table-danger">
-                                <td>1</td>
-                                <td>star</td>
-                                <td>  </td>
+                            <tr *ngFor = "let brands of brand" class="table-danger">
+                                <td>{{brands.brandId}}</td>
+                                <td>{{brands.brandName}}</td>
+                                <td>{{brands.brandAliasName}}</td>
+                                <td>{{brands.brandLogo}}</td>
+                                <td>{{brands.brandStatus}}</td>
+                                <td>{{brands.company}}</td>
+
                                 <td>
                                     <button type="button" class="btn btn-primary" style="border-radius: 5px;">Edit</button>&nbsp;&nbsp;
                                     <button type="button" class="btn btn-danger" style="border-radius: 5px;">Delete</button>

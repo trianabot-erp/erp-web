@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup ,Validators} from '@angular/forms';
+import { ProjectapiService } from '../projectapi.service';
 
 @Component({
   selector: 'app-productaddcategory',
@@ -8,16 +9,25 @@ import { FormBuilder, FormGroup ,Validators} from '@angular/forms';
   styleUrls: ['./productaddcategory.component.css']
 })
 export class ProductaddcategoryComponent implements OnInit {
-addcategory:FormGroup;
+addcat:FormGroup;
 
-  constructor(private roter:Router, private fb:FormBuilder) {
-    this.addcategory = this.fb.group({
-      categoryname:['', Validators.required],
-      selectbrand:['', Validators.required]
-    });
+  constructor(private roter:Router, private fb:FormBuilder,private http:ProjectapiService) {
+   
    }
 
   ngOnInit() {
+    this.addcat = this.fb.group({
+      catId:[''],
+      catName:[''],
+      catAliasName:[''],
+      catModel:[''],
+      catLogo:[''],
+      brand:['']
+    });
+  }
+  onSubmit(data){
+this.http.createcat(data).subscribe(data=>{})
+    console.log(this.addcat.value)
   }
   viewcategory(){
     this.roter.navigate(['/productcategory'])

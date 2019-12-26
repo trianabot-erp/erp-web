@@ -65,12 +65,14 @@ export class AdduserComponent implements OnInit {
     this.http.postuser(obj).subscribe(data => {
       console.log("data from postuser service", data);
       this.adduserform.reset();
+      alert("user registeration is sucessfully")
       this.router.navigate(['/dashboard']);
     
 
     }, err => {
       console.log("err from userpost service", err);
-    })
+      
+    })	
   }
 }
 

@@ -21,11 +21,11 @@ export class LoginComponent implements OnInit {
   get f() { return this.loginForm.controls; }
   onSubmit() {
     console.log(JSON.stringify(this.loginForm.value));
-    let obj = {
-      emailId: this.loginForm.value.emailId,
-      password: this.loginForm.value.password
-    }
-    this.http.login(obj).subscribe(data => {
+    // let obj = {
+    //   emailId: this.loginForm.value.emailId,
+    //   password: this.loginForm.value.password
+    // }
+    this.http.login(this.loginForm.value).subscribe(data => {
       console.log("data from login service", data);
       
 alert(data['message']);

@@ -12,6 +12,7 @@ export class ProductcategoryComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit() {
+    
   }
   addcategory(){
     this.router.navigate(['/productaddcategory'])

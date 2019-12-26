@@ -27,5 +27,6 @@ console.log(this.addroleform.value);
 this.http.createRole(this.addroleform.value).subscribe(data=>{
   console.log("roles created successfully",data );
 })
+
   }
 }
