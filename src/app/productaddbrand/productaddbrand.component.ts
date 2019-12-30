@@ -15,8 +15,8 @@ export class ProductaddbrandComponent implements OnInit {
   selectedFile: File;
   brandLogo: File;
   logodata: any;
+  brandLogoName: string;
   constructor(private formbuilder: FormBuilder, private router: Router, private http: ProjectapiService) {
-
   }
   ngOnInit() {
     this.addbrand = this.formbuilder.group({
@@ -30,29 +30,16 @@ export class ProductaddbrandComponent implements OnInit {
 
   }
   onFileSelected(event) {
-    // this.selectedFile = <File>event.target.files[0];
-    // console.log(this.selectedFile.name);
-    // this.addbrand.controls['fliename'].setValue(this.selectedFile.name);
-    // this.http.createlogo(this.selectedFile.name).subscribe(data =>{
-    //   console.log(data);
-    // }, error =>{
-    //   console.log(error);
-    // });
     let brandLogo = event.target.files[0];
     console.log("Selected", brandLogo.name);
-
-
     let formData = new FormData();
     formData.append('mediafile', brandLogo);
     this.logodata = brandLogo.name;
     console.log(this.logodata)
     this.http.createlogo(formData).subscribe(result => {
       console.log(result);
-    
+   this.logodata = result['imageName'];
     });
-
-
-
   }
   onSubmit() {
 
@@ -64,8 +51,6 @@ export class ProductaddbrandComponent implements OnInit {
       company: this.addbrand.value.company
     }
     console.log("obj", obj);
-    console.log(this.addbrand.value);
-    //creating new brand
     this.http.createBrand(obj).subscribe(data => {
       console.log(data)
     }, error => {

@@ -42,8 +42,9 @@
                                 <th>Brand Name</th>
                                 <th>Brand AliasName</th>
                                 <th>Brand Logo</th>
-                                <th>Action</th>
-                                 
+                                <th>Brand Status</th>
+                                <th>Brand Company</th>
+                                <th>Action</th>     
                             </tr>
                         </thead>
                         <tbody style="text-align: center;">
@@ -51,11 +52,9 @@
                                 <td>{{brands.brandId}}</td>
                                 <td>{{brands.brandName}}</td>
                                 <td>{{brands.brandAliasName}}</td>
-                                <td>{{brands.brandLogo}}</td>
+                                <td><img src="{{brands.brandLogo}}" style="width: 50px;"></td>
                                 <td>{{brands.brandStatus}}</td>
                                 <td>{{brands.company}}</td>
-
-                                <td>  </td>
                                 <td>
                                     <button type="button" class="btn btn-primary" style="border-radius: 5px;">Edit</button>&nbsp;&nbsp;
                                     <button type="button" class="btn btn-danger" style="border-radius: 5px;">Delete</button>

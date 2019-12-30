@@ -19,26 +19,26 @@
                         <div class="col-md-6" style="margin-left: 210px;">
                             <div class="form-group">
                                 <label style="font-size: 16px;">Brand Id</label>
-                                <input type="text" style="height:35px;font-size: 12px;" formControlName="brandid"
-                                    class="form-control" placeholder="Enter Brand Id" />
+                                <input type="text" style="height:35px;font-size: 12px;" formControlName="brandId"class="form-control" placeholder="Enter Brand Id" />
                             </div>
                             <div class="form-group">
                                 <label style="font-size: 16px;">Brand Name</label>
-                                <input type="text" style="height:35px;font-size: 12px;" formControlName="brandname"
-                                    class="form-control" placeholder="Enter Brand Name" />
+                                <input type="text" style="height:35px;font-size: 12px;" formControlName="brandName"class="form-control" placeholder="Enter Brand Name" />
                             </div>
                             <div class="form-group">
                                 <label style="font-size: 16px;">Brand AliasName</label>
-                                <input type="text" style="height:35px;font-size: 12px;" formControlName="brandaliasname"
-                                    class="form-control" placeholder="Enter Brand Alias Name" />
+                                <input type="text" style="height:35px;font-size: 12px;" formControlName="brandAliasName"class="form-control" placeholder="Enter Brand Alias Name" />
                             </div>
                             <div class="form-group">
                                 <label style="font-size: 16px;">Brand Logo</label>
-                                <input type="file" style="height:35px;font-size: 12px;" class="form-control">
+                                <input type="file" style="height:35px;font-size: 12px;"(change)="onFileSelected($event)"formControlName="brandLogo" class="form-control">
                             </div>
                             <div class="form-group">
-                                <button type="button" style="border-radius: 15px;"
-                                    class="btn btn-primary">Submit</button>
+                                <label style="font-size: 16px;">Company</label>
+                                <input type="text" style="height:35px;font-size: 12px;"formControlName="company" class="form-control"placeholder="Enter Company">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" style="border-radius: 15px;"class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </div>

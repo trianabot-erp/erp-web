@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProjectapiService } from '../projectapi.service';
 
 
 @Component({
@@ -8,11 +9,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./productcategory.component.css']
 })
 export class ProductcategoryComponent implements OnInit {
-
-  constructor(private router:Router) { }
+category:[];
+  constructor(private router:Router,private http:ProjectapiService) { }
 
   ngOnInit() {
-    
+    this.http.getallcategoryes().subscribe(data => {
+      console.log(data);
+      // this.brand['']=data
+      this.category=data['data'];
+      console.log(this.category)
+
+    }, error => {
+      console.log(error);
+    })
   }
   addcategory(){
     this.router.navigate(['/productaddcategory'])

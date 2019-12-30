@@ -43,6 +43,8 @@ export class ProjectapiService {
   createcat(data){
     return this.http.post('http://localhost:4040/categoryes/createcategory',data);
   }
- 
+  getallcategoryes(){
+    return this.http.get('http://localhost:4040/categoryes/getallcategoryes');
+  }
   }
 
